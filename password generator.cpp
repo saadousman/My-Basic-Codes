@@ -1,4 +1,4 @@
-// C program to generate random numbers 
+// C program to generate random password
 #include <stdio.h> 
 #include <stdlib.h> 
 #include<time.h> 
