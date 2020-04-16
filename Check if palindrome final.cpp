@@ -6,19 +6,12 @@ int main(){
 	//Declaring variables for storing input,holding original word, holding reversed word
 	char captureinput[wordlength];
 	char storeinput[wordlength];
-	char revword[wordlength];
-	
 	//code begins by capturing input
 	scanf("%s",captureinput);
     for(int i=0;i<=wordlength;i++) //for loop for copying input array to storeinput array
 	{storeinput[i]=captureinput[i];}
-	
-	strrev(captureinput);				// reversing the array
-	
-	for(int a=0;a<=wordlength;a++)     // storing reversed array to revword
-	{revword[a]=captureinput[a];}
-	
-   int result=  strcmp(revword,storeinput); // compares the reversed and entered array and stores the result 
+	strrev(captureinput);				// reversing the array	
+   int result=  strcmp(captureinput,storeinput); // compares the reversed and entered array and stores the result 
    
    if (result==0)						// final if statement
    printf("The Word You have Entered is indeed a Palindrome");
